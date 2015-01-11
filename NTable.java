@@ -57,6 +57,8 @@ class NTable
                     table.putBoolean("toteFound", false);
                 }
             } 
+            out.close();
+            in.close();
             client.close();
         }
         catch(IOException e)
