@@ -35,6 +35,7 @@ class NTable
                 if(targetDataRaw.isEmpty())
                     continue;
 
+                // Implements the FRC 2015 Network Tables Protocol
                 boolean found;
                 double distance = 0, azimuth = 0;
                 String[] parsed = targetDataRaw.split(";"); 
