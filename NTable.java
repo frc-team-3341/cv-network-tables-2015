@@ -40,7 +40,7 @@ class NTable
                 double distance = 0, azimuth = 0;
                 String[] parsed = targetDataRaw.split(";"); 
                 found = parsed[0].equals("true");
-                System.out.println(parsed[0]); 
+                //System.out.println(parsed[0]); 
                 if(found)
                 {
                     distance = Double.parseDouble(parsed[1]);
