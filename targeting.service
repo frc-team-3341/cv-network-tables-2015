@@ -2,7 +2,7 @@
 Desctiption=Targeting Bootloader
 
 [Service]
-ExecStart=/home/option16pi/NetworkTableClient/startup.sh
+ExecStart=/bin/bash /home/option16pi/NetworkTableClient/startup.sh
 
 [Install]
 WantedBy=multi-user.target
