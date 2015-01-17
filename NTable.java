@@ -45,9 +45,10 @@ class NTable
                 {
                     distance = Double.parseDouble(parsed[1]);
                     azimuth = Double.parseDouble(parsed[2]);
-                    //System.out.println("Tote found!");
-                    //System.out.println("Distance: " + distance);
-                    //System.out.println("Azimuth: " + azimuth); 
+                    System.out.println("Tote found!");
+                    System.out.println("Distance: " + distance);
+                    System.out.println("Azimuth: " + azimuth); 
+                    System.out.println(); 
                     table.putBoolean("toteFound", true);
                     table.putNumber("distance_m", distance);
                     table.putNumber("azimuth_deg", azimuth);
@@ -56,6 +57,7 @@ class NTable
                 {
                     //System.out.println("Tote not found");
                     table.putBoolean("toteFound", false);
+                    System.out.println(); 
                 }
             } 
             out.close();
